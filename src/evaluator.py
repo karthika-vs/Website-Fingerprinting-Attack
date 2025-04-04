@@ -15,7 +15,7 @@ def evaluate_results(y_true, y_pred):
     
     print(f"\nTrue Positive Rate: {tpr:.4f}")
     print(f"False Positive Rate: {fpr:.4f}")
-    
+    print("accuracy:", (tp + tn) / (tp + tn + fp + fn))
     return {
         'tpr': tpr,
         'fpr': fpr,

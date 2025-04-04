@@ -3,7 +3,7 @@ from tqdm import tqdm
 from src.wf_config import CONFIG
 
 class WeightedKNN:
-    def __init__(self, k=5, k_reco=5, n_rounds=100):
+    def __init__(self, k=5, k_reco=5, n_rounds=10):
         self.k = k
         self.k_reco = k_reco
         self.n_rounds = n_rounds
@@ -13,6 +13,7 @@ class WeightedKNN:
     
     def _weighted_distance(self, x1, x2):
         """Calculate weighted Manhattan distance"""
+        
         return np.sum(self.weights * np.abs(x1 - x2))
     
     def fit(self, X, y):

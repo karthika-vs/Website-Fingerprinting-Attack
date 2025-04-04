@@ -7,7 +7,7 @@ CONFIG = {
     "FEATURE_SET_SIZE": 4000,       # Approximate number of features
     "K_NEIGHBORS": 5,               # k for k-NN
     "K_RECO": 5,                    # k for weight recommendation
-    "N_ROUNDS": 6000,               # Training rounds
+    "N_ROUNDS": 10,               # Training rounds
     "TEST_SIZE": 0.3,               # Test set size
     "RANDOM_SEED": 42
 }
